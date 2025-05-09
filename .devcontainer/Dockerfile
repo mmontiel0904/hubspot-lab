@@ -7,4 +7,5 @@ RUN apt update \
     && rm -rf /var/lib/apt/lists/* \
     && echo "node ALL=(ALL) NOPASSWD: ALL" >/etc/sudoers.d/node \
     && chmod 0440 /etc/sudoers.d/node
-    && npm install -g @hubspot/cli
+
+RUN npm install -g @hubspot/cli
